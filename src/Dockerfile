@@ -1,5 +1,5 @@
-FROM openjdk:11
-COPY dockerBase /myapp
-WORKDIR /myapp
-
-CMD ["java", "TestApplication"]
+FROM openjdk:17
+WORKDIR /app
+COPY src/app/src
+RUN javac -cp /src/main.java
+CMD ["java","-cp", "src" , "Main"]
