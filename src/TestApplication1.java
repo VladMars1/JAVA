@@ -59,7 +59,7 @@ public class TestApplication1 {
 
     private static int startTest(Scanner scanner) {
         int score = 0;
-
+/*```/*
         for (int i = 0; i < QUESTIONS.length; i++) {
             System.out.println(QUESTIONS[i]);
             String answer = scanner.nextLine();
